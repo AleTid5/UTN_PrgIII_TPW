@@ -45,8 +45,7 @@
 			<div class="made-with">Made with <strong>Material Kit</strong></div>
 		</a>
 
-	     <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
+	     <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
 
 	    <div class="footer">
 	        <div class="container text-center">
@@ -61,4 +60,5 @@
 	<script src="Scripts/jquery.bootstrap.js" type="text/javascript"></script>
 	<script src="Scripts/material-bootstrap-wizard.js"></script>
 	<script src="Scripts/jquery.validate.min.js"></script>
+    <asp:ContentPlaceHolder ID="Javascript" runat="server"></asp:ContentPlaceHolder>
 </html>

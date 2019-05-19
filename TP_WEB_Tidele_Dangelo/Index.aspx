@@ -21,9 +21,9 @@
                             </div>
 
                             <div class="tab-content">
-                                <!-- #include file ="Views/Voucher.html" -->
-                                <!-- #include file ="Views/Products.html" -->
-                                <!-- #include file ="Views/Client.html" -->
+                                <!-- #include file ="Views/Voucher.aspx" -->
+                                <!-- #include file ="Views/Products.aspx" -->
+                                <!-- #include file ="Views/Client.aspx" -->
                             </div>
                             <div class="wizard-footer">
                                 <div class="pull-right">
