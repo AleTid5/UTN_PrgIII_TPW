@@ -23,7 +23,7 @@
                             <div class="tab-content">
                                 <!-- #include file ="Views/Voucher.html" -->
                                 <!-- #include file ="Views/Products.html" -->
-                                <!-- #include file ="Views/Client.html" -->
+                                <!-- #include file ="Views/User.html" -->
                             </div>
                             <div class="wizard-footer">
                                 <div class="pull-right">
@@ -42,4 +42,24 @@
             </div>
         </div>
     </div>
+</asp:Content>
+
+<asp:Content ID="JS" ContentPlaceHolderID="Javascript" runat="server">
+    <script>        
+        const form = {
+            voucher: String,
+            productSelected: Object,
+            client: {
+                DNI: Number,
+                Nombre: String,
+                Apellido: String,
+                Email: String,
+                Direccion: String,
+                Ciudad: String,
+                CodigoPostal: String
+            }
+        };
+
+
+    </script>
 </asp:Content>

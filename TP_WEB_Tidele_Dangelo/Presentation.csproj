@@ -125,7 +125,7 @@
     <Content Include="Content\Images\wizard-city.jpg" />
     <Content Include="Content\Images\wizard-profile.jpg" />
     <Content Include="Content\Styles\material-bootstrap-wizard.css" />
-    <Content Include="Views\Client.html" />
+    <Content Include="Views\User.html" />
     <Content Include="Views\Products.html" />
     <Content Include="Views\Voucher.html" />
     <Content Include="Index.aspx" />
