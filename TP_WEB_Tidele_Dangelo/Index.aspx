@@ -48,15 +48,15 @@
     <script>        
         const form = {
             voucher: String,
-            productSelected: Object,
-            client: {
+            product: Object,
+            user: {
                 DNI: Number,
-                Nombre: String,
-                Apellido: String,
+                Name: String,
+                Lastname: String,
                 Email: String,
-                Direccion: String,
-                Ciudad: String,
-                CodigoPostal: String
+                Address: String,
+                City: String,
+                PostalCode: String
             }
         };
 

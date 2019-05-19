@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Business
 {
-    public class Class1
+    public class UserRepository : _Repository
     {
+        public UserRepository()
+        {
+            this.Table = "Usuarios";
+        }
     }
 }
