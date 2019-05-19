@@ -125,8 +125,9 @@
     <Content Include="Content\Images\wizard-city.jpg" />
     <Content Include="Content\Images\wizard-profile.jpg" />
     <Content Include="Content\Styles\material-bootstrap-wizard.css" />
-    <Content Include="Views\Client.aspx" />
-    <Content Include="Views\Voucher.aspx" />
+    <Content Include="Views\Client.html" />
+    <Content Include="Views\Products.html" />
+    <Content Include="Views\Voucher.html" />
     <Content Include="Index.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -142,7 +143,6 @@
     <Content Include="Scripts\material-bootstrap-wizard.js" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="Views\Products.aspx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
@@ -181,27 +181,6 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Client.aspx.cs">
-      <DependentUpon>Client.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\Client.aspx.designer.cs">
-      <DependentUpon>Client.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Products.aspx.cs">
-      <DependentUpon>Products.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\Products.aspx.designer.cs">
-      <DependentUpon>Products.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Voucher.aspx.cs">
-      <DependentUpon>Voucher.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\Voucher.aspx.designer.cs">
-      <DependentUpon>Voucher.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
