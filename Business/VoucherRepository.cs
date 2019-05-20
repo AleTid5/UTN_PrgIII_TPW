@@ -11,6 +11,7 @@ namespace Business
         public VoucherRepository()
         {
             this.Table = "Vouchers";
+            //aleee
         }
 
         public bool ValidateVoucher(String voucher)
