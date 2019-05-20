@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Presentation.SiteMaster" %>
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="apple-touch-icon" sizes="76x76" href="Content/Images/favicon.ico">
+
+    <title>Material Bootstrap Wizard by Creative Tim</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="apple-touch-icon" sizes="76x76" href="Content/Images/apple-icon.png" />
+    <link rel="icon" type="image/png" href="Content/Images/favicon.png" />
+
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+    <!-- CSS Files -->
+    <link href="Content/Styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Styles/material-bootstrap-wizard.css" rel="stylesheet" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="Content/Styles/demo.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="image-container set-full-height" style="background-image: url('Content/Images/wizard-profile.jpg')">
+        <a href="http://creative-tim.com">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="Content/Images/new_logo.png">
+                </div>
+                <div class="brand">
+                    Creative Tim
+                </div>
+            </div>
+        </a>
+
+        <a href="http://demos.creative-tim.com/material-kit/index.html?ref=material-bootstrap-wizard" class="made-with-mk">
+            <div class="brand">MK</div>
+            <div class="made-with">Made with <strong>Material Kit</strong></div>
+        </a>
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+
+        <div class="footer">
+            <div class="container text-center">
+                <%--	             Made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com">Creative Tim</a>. Free download <a href="http://www.creative-tim.com/product/bootstrap-wizard">here.</a>--%>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="Scripts/jquery-2.2.4.min.js" type="text/javascript"></script>
+<script src="Scripts/bootstrap.min.js" type="text/javascript"></script>
+<script src="Scripts/jquery.bootstrap.js" type="text/javascript"></script>
+<script src="Scripts/material-bootstrap-wizard.js"></script>
+<script src="Scripts/jquery.validate.min.js"></script>
+<script>
+    function getFromUrl(url, data) {
+        $.ajax({
+            url: url,
+            method: 'POST',
+            dataType: 'JSON',
+            data: data,
+            success: function (successData) {
+                return JSON.parse(successData);
+            },
+            error: function (errorData) {
+                console.log(errorData);
+            }
+        });
+    }
+</script>
+<asp:contentplaceholder id="Javascript" runat="server"></asp:contentplaceholder>
+</html>
