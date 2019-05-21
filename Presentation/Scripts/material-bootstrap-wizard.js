@@ -41,10 +41,36 @@ $(document).ready(function(){
 		    //  required: true,
 		    //  minlength: 3,
 		    //}
-              voucher: {
+              //voucher: {
+              //    required: true,
+              //    minlength: 32,
+              //    maxlength: 32
+              //}
+              Code:
+              {
                   required: true,
-                  minlength: 6,
-                  maxlength: 6
+                  minlength: 3,
+
+              },
+              Ciudad:
+              {
+                  required: true,
+                  minlength: 3,
+              },
+              Direccion:
+              {
+                  required: true,
+                  minlength: 3,
+              },
+              Nombre:
+              {
+                  required: true,
+                  minlength: 3,
+              },
+              Apellido:
+              {
+                  required: true,
+                  minlength: 3,
               }
         },
 
