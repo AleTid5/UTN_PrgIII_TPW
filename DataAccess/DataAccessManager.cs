@@ -5,7 +5,7 @@ namespace DataAccess
 {
     public class DataAccessManager
     {
-        public static string cadenaConexion = "data source=(local); initial catalog=TIDELE_DB; integrated security=sspi";
+        public static string cadenaConexion = "data source=(local); initial catalog=TP_WEB_Tidele_Dangelo; integrated security=sspi";
         private SqlCommand comando;
         private SqlConnection conexion;
         private SqlDataReader lector;

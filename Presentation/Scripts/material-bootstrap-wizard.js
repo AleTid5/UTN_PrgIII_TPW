@@ -19,12 +19,37 @@ var searchVisible = 0;
 var transparent = true;
 var mobile_device = false;
 
-$(document).ready(function(){
+$(document).ready(function () {
+    async function getURL(url, data) {
+        let response = null;
+        await $.ajax({
+            url: url + O2Q(data),
+            method: 'GET',
+            dataType: 'json'
+        }).then((JsonResponse) => {
+            response = JSON.parse(JsonResponse)
+        });
+        return response;
+    }
+
+    function O2Q(object) {
+        let query = '?';
+
+        Object.keys(object).map(key => {
+            query += key + "=" + object[key] + "&";
+        });
+
+        return query;
+    }
 
     $.material.init();
 
     /*  Activate the tooltips      */
     $('[rel="tooltip"]').tooltip();
+
+    $.validator.addMethod("existsVoucher", async function (voucherCode, element) {
+        return this.optional(element) || (await getURL('/api/voucher', { voucher: voucherCode })).Status;
+    }, "* El voucher ingresado no existe");
 
     // Code for the Validator
     var $validator = $('.wizard-card form').validate({
@@ -43,8 +68,9 @@ $(document).ready(function(){
 		    //}
               voucher: {
                   required: true,
-                  minlength: 6,
-                  maxlength: 6
+                  minlength: 32,
+                  maxlength: 32,
+                  existsVoucher: true
               }
         },
 

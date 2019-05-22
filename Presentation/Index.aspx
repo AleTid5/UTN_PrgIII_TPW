@@ -59,7 +59,5 @@
                 PostalCode: String
             }
         };
-
-
     </script>
 </asp:Content>

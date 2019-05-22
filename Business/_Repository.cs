@@ -11,6 +11,12 @@ namespace Business
         public SqlCommand SqlCommand { set; get; }
         public SqlDataReader SqlDataReader { set; get; }
 
+        public _Repository()
+        {
+            this.SqlConnection = new SqlConnection();
+            this.SqlCommand = new SqlCommand();
+        }
+
         private void PrepareExec(String Query)
         {
             this.SqlConnection.ConnectionString = DataAccessManager.cadenaConexion;
