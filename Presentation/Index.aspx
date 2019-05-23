@@ -48,7 +48,7 @@
     <script>        
         const form = {
             voucher: String,
-            product: Object,
+            product: Number,
             user: {
                 DNI: Number,
                 name: String,
