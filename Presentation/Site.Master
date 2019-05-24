@@ -61,6 +61,7 @@
 <script src="Scripts/jquery.bootstrap.js" type="text/javascript"></script>  
 <script src="Scripts/material-bootstrap-wizard.js"></script>
 <script src="Scripts/jquery.validate.min.js"></script>
+<script src="Scripts/siema.min.js"></script>
 <script src="Scripts/App.js"></script>
 <asp:contentplaceholder id="Javascript" runat="server"></asp:contentplaceholder>
 </html>

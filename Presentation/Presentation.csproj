@@ -148,6 +148,7 @@
     <Content Include="Scripts\jquery.bootstrap.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\material-bootstrap-wizard.js" />
+    <Content Include="Scripts\siema.min.js" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Views\Products.html" />

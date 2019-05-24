@@ -33,10 +33,10 @@ $(document).ready(function () {
     var $validator = $('.wizard-card form').validate({
         rules: {
             voucher: {
-                required: true,
-                minlength: 32,
-                maxlength: 32,
-                existsVoucher: true
+                //required: true,
+                //minlength: 32,
+                //maxlength: 32,
+                //existsVoucher: true
             },
             city:
             {

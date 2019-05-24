@@ -1,4 +1,15 @@
-﻿function getURL(url, data) {
+﻿/*****************************************************************************/
+/***************************** G E N É R I C O S *****************************/
+/*****************************************************************************/
+$(document).ready(function () {
+    init();
+});
+
+function init() {
+    fillProducts();
+}
+
+function getURL(url, data) {
     let response = null;
 
     $.ajax({
@@ -34,6 +45,8 @@ function postURL(url, data) {
 function O2Q(object) {
     let query = '?';
 
+    if (!object) return query;
+
     Object.keys(object).map(key => {
         query += key + "=" + object[key] + "&";
     });
@@ -57,4 +70,12 @@ function fillForm(inputs, parent = null) {
     } else {
         inputs.map(input => form[parent][input] = $('[name="' + input + '"]').val().trim(), this);
     }
+}
+
+/*****************************************************************************/
+/***************************** P R O D U C T O S *****************************/
+/*****************************************************************************/
+function fillProducts() {
+    let products = getURL('/api/product');
+    console.log(products);
 }

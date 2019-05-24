@@ -11,6 +11,7 @@ namespace Presentation.Controllers
 {
     public class VoucherController : ApiController
     {
+        [HttpGet]
         public String Validate([FromUri] String voucher)
         {
             bool isValid = false;
