@@ -32,12 +32,12 @@ $(document).ready(function () {
     // Code for the Validator
     var $validator = $('.wizard-card form').validate({
         rules: {
-            voucher: {
-                required: true,
-                minlength: 32,
-                maxlength: 32,
-                existsVoucher: true
-            },
+            //voucher: {
+            //    required: true,
+            //    minlength: 32,
+            //    maxlength: 32,
+            //    existsVoucher: true
+            //},
             city:
             {
                 required: true,
