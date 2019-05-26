@@ -30,7 +30,6 @@ $(document).ready(function () {
     }, "* El voucher ingresado no existe");
 
     $.validator.addMethod("productSelected", function (productId, element) {
-        console.log(productId);
         return parseInt(productId) > 0;
     }, "* Debe seleccionar un producto");
 
