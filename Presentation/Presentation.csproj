@@ -153,6 +153,7 @@
     <Content Include="Content\Images\wizard-book.jpg" />
     <Content Include="Content\Images\wizard-city.jpg" />
     <Content Include="Content\Images\wizard-profile.jpg" />
+    <Content Include="Content\Styles\bootstrap-dialog.min.css" />
     <Content Include="Content\Styles\bootstrap.min.css" />
     <Content Include="Content\Styles\app.css" />
     <Content Include="Content\Styles\material-bootstrap-wizard.css" />
@@ -162,6 +163,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\bootstrap-dialog.min.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.2.4.min.js" />
     <Content Include="Scripts\jquery.bootstrap.js" />
@@ -184,6 +186,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\RaffleController.cs" />
     <Compile Include="Controllers\VoucherController.cs" />
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>

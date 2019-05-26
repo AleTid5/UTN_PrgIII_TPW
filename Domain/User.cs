@@ -15,6 +15,6 @@ namespace Domain
         public String Email { set; get; }
         public String Address { set; get; }
         public String City { set; get; }
-        public String PostalCode { set; get; }
+        public int PostalCode { set; get; }
     }
 }

@@ -28,15 +28,5 @@ namespace Presentation.Controllers
                 return Transform.ToJson(new Response(false, ex.Message));
             }
         }
-
-        //[HttpPost]
-        //public ProductTemplate GetView()
-        //{
-        //    //NameValueCollection collection = HttpContext.Current.Request.Form;
-        //    //var items = collection.AllKeys.SelectMany(collection.GetValues, (k, v) => new { key = k, value = v });
-        //    //ProductURLImage = Convert.ToString(HttpContext.Current.Request.Form["URLImage"]),
-        //    //    ProductTitle = Convert.ToString(HttpContext.Current.Request.Form["Title"]),
-        //    //    ProductDescription = Convert.ToString(HttpContext.Current.Request.Form["Description"])
-        //}
     }
 }

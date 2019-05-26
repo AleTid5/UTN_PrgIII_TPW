@@ -56,26 +56,28 @@ function O2Q(object) {
 }
 
 function fillFormData(tabNumber) {
+
     if (1 === tabNumber) {
-        fillForm(['voucher']);
+        form.voucher = $('[name="voucher"]').val().trim();
 
         setTimeout(function () {
             productSiema.resizeHandler();
         }, 1);
-    } else if (2 === tabNumber) {
-        fillForm(['product']);
-    } else {
-        fillForm(['DNI', 'lastname', 'name', 'email', 'address', 'city', 'postalCode']);
     }
+    //else if (2 === tabNumber) {
+    //    fillForm(['product']);
+    //} else {
+    //    fillForm(['DNI', 'lastname', 'name', 'email', 'address', 'city', 'postalCode']);
+    //}
 }
 
-function fillForm(inputs, parent = null) {
-    if (!parent) {
-        inputs.map(input => form[input] = $('[name="' + input + '"]').val().trim(), this);
-    } else {
-        inputs.map(input => form[parent][input] = $('[name="' + input + '"]').val().trim(), this);
-    }
-}
+//function fillForm(inputs, parent = null) {
+//    if (!parent) {
+//        inputs.map(input => form[input] = $('[name="' + input + '"]').val().trim(), this);
+//    } else {
+//        inputs.map(input => form[parent][input] = $('[name="' + input + '"]').val().trim(), this);
+//    }
+//}
 
 /*****************************************************************************/
 /***************************** P R O D U C T O S *****************************/
@@ -94,7 +96,6 @@ function fillProducts() {
 
     productSiema = new Siema({
         selector: yo,
-        onInit: onInitCallback,
         onChange: onChangeCallback,
     });
 
@@ -107,10 +108,6 @@ function fillProducts() {
     $('.total-slides').text(productSiema.innerElements.length);
     document.querySelector('#productTemplate').appendChild(yo);
     productSiema.resizeHandler();
-}
-
-function onInitCallback() {
-    // this.resizeHandler();
 }
 
 function onChangeCallback() {
@@ -136,4 +133,52 @@ function productDislike(productId) {
     $('#btn-product-like-' + productId).removeClass('btn-success');
     $('#btn-product-dislike-' + productId).addClass('btn-danger');
 
+}
+
+/*****************************************************************************/
+/****************************** U S U A R I O S ******************************/
+/*****************************************************************************/
+function saveRaffle() {
+    form.user.DNI = $('[name="DNI"]').val().trim();
+    form.user.name = $('[name="name"]').val().trim();
+    form.user.lastname = $('[name="lastname"]').val().trim();
+    form.user.email = $('[name="email"]').val().trim();
+    form.user.address = $('[name="address"]').val().trim();
+    form.user.city = $('[name="city"]').val().trim();
+    form.user.postalCode = parseInt($('[name="postalCode"]').val().trim());
+
+    const response = postURL('/api/raffle', form);
+
+    if (response.Status) {
+        BootstrapDialog.show({
+            title: 'Participación exitosa!',
+            message: 'Su participacion se ha procesado exitosamente! Le deseamos mucha suerte! 😊',
+            closable: false,
+            type: BootstrapDialog.TYPE_SUCCESS,
+            buttons: [{
+                label: 'Aceptar',
+                hotkey: 13,
+                cssClass: 'btn-success btn-sm',
+                action: function () {
+                    location.reload();
+                }
+            }]
+        });
+    } else {
+        BootstrapDialog.show({
+            title: 'Ha ocurrido un error!',
+            message: 'Lo sentimos, un error ha ocurrido al intentar registrar su participación! ' +
+                     'Por favor, verifique los datos ingresados, y vuelva a intentarlo!',
+            closable: false,
+            type: BootstrapDialog.TYPE_DANGER,
+            buttons: [{
+                label: 'Cerrar',
+                hotkey: 13,
+                cssClass: 'btn-danger btn-sm',
+                action: function () {
+                    BootstrapDialog.closeAll();
+                }
+            }]
+        });
+    }
 }
