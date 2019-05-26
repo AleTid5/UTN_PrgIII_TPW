@@ -7,9 +7,9 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Presentation {
+namespace Presentation.Views {
     
     
-    public partial class Index {
+    public partial class ProductTemplate {
     }
 }

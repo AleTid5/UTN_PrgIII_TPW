@@ -29,6 +29,11 @@ $(document).ready(function () {
         return getURL('/api/voucher', { voucher: voucherCode }).Status;
     }, "* El voucher ingresado no existe");
 
+    $.validator.addMethod("productSelected", function (productId, element) {
+        console.log(productId);
+        return parseInt(productId) > 0;
+    }, "* Debe seleccionar un producto");
+
     // Code for the Validator
     var $validator = $('.wizard-card form').validate({
         rules: {
@@ -37,6 +42,10 @@ $(document).ready(function () {
                 //minlength: 32,
                 //maxlength: 32,
                 //existsVoucher: true
+            },
+            product: {
+                required: true,
+                productSelected: true
             },
             city:
             {
@@ -94,7 +103,7 @@ $(document).ready(function () {
                 $validator.focusInvalid();
                 return false;
             }
-
+            
             fillFormData(index);
         },
 

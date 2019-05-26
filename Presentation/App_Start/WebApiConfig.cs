@@ -23,6 +23,9 @@ namespace Presentation
 
             config.Formatters.JsonFormatter.SupportedMediaTypes
             .Add(new MediaTypeHeaderValue("text/html"));
+
+            config.Formatters.JsonFormatter.SupportedMediaTypes
+            .Add(new MediaTypeHeaderValue("multipart/form-data"));
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="Presentation.Index" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
@@ -15,7 +15,7 @@
                             <div class="wizard-navigation">
                                 <ul>
                                     <li><a href="#voucher" data-toggle="tab">Voucher</a></li>
-                                    <li><a href="#products" data-toggle="tab">Producto</a></li>
+                                    <li><a href="#products" data-toggle="tab" onclick="setTimeout(function () {productSiema.resizeHandler();}, 1);">Producto</a></li>
                                     <li><a href="#user" data-toggle="tab">Cliente</a></li>
                                 </ul>
                             </div>
@@ -32,7 +32,7 @@
                                 </div>
 
                                 <div class="pull-left">
-                                    <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Anterior' />
+                                    <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Anterior' onclick="setTimeout(function () {productSiema.resizeHandler();}, 1);" />
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
