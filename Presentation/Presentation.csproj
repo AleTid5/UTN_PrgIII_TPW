@@ -142,6 +142,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\profile.gif" />
     <Content Include="Content\Images\apple-icon.png" />
     <Content Include="Content\Images\default-avatar.png" />
     <Content Include="Content\Images\favicon.png" />
@@ -156,7 +157,9 @@
     <Content Include="Content\Styles\bootstrap-dialog.min.css" />
     <Content Include="Content\Styles\bootstrap.min.css" />
     <Content Include="Content\Styles\app.css" />
+    <Content Include="Content\Styles\fontawesome.css" />
     <Content Include="Content\Styles\material-bootstrap-wizard.css" />
+    <Content Include="Content\Styles\material_icons.css" />
     <Content Include="Content\Styles\productTemplate.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Index.aspx" />
@@ -232,7 +235,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\App_LocalResources\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
