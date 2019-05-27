@@ -24,7 +24,7 @@ namespace Presentation.Controllers
                 RaffleRule.ValidateRequest(HttpContext.Current.Request.Form);
                 User user = new UserRepository().GetUserByDNI(Convert.ToInt32(HttpContext.Current.Request.Form["user[DNI]"]));
 
-                if (!Convert.ToBoolean(user))
+                if (null == user)
                 {
                     user = new UserRepository().CreateUser(
                         Convert.ToInt32(HttpContext.Current.Request.Form["user[DNI]"]),

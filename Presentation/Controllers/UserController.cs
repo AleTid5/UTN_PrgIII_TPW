@@ -1,4 +1,5 @@
 ﻿using Business;
+using Domain;
 using Presentation.Models;
 using System;
 using System.Collections.Generic;
@@ -9,21 +10,19 @@ using System.Web.Http;
 
 namespace Presentation.Controllers
 {
-    public class VoucherController : ApiController
+    public class UserController : ApiController
     {
         [HttpGet]
-        public String Validate(String voucher)
+        public String getUser(String DNI)
         {
-            bool isValid = false;
-
             try
             {
-                isValid = (new VoucherRepository()).ValidateVoucher(voucher);
-                return Transform.ToJson(new Response(isValid));
+                User user = (new UserRepository()).GetUserByDNI(int.Parse(DNI));
+                return Transform.ToJson(new Response(true, user));
             }
             catch (Exception ex)
             {
-                return Transform.ToJson(new Response(isValid, ex.Message));
+                return Transform.ToJson(new Response(false, null));
             }
         }
     }

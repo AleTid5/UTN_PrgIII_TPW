@@ -182,3 +182,27 @@ function saveRaffle() {
         });
     }
 }
+
+function validateDNI(DNI) {
+    const user = getURL('/api/user', { DNI: DNI });
+
+    if (!user.Status) {
+        return;
+    }
+
+    if (user.Data === null) {
+        $('#user input.changeable').val('').attr('disabled', false);
+        $('#user .control-label').show();
+    }
+    else
+    {
+        $('#user input.changeable').attr('disabled', true);
+        $('#user .control-label').hide();
+        $('[name="name"]').val(user.Data.Name);
+        $('[name="lastname"]').val(user.Data.Lastname);
+        $('[name="email"]').val(user.Data.Email);
+        $('[name="address"]').val(user.Data.Address);
+        $('[name="city"]').val(user.Data.City);
+        $('[name="postalCode"]').val(parseInt(user.Data.PostalCode));
+    }
+}

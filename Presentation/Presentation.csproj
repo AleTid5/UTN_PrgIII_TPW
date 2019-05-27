@@ -177,7 +177,6 @@
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Views\Products.html" />
     <Content Include="Views\ProductTemplate.aspx" />
-    <Content Include="Views\ProductTemplate.html" />
     <Content Include="Views\User.html" />
     <Content Include="Views\Voucher.html" />
     <Content Include="Web.config" />
@@ -190,6 +189,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\RaffleController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Controllers\VoucherController.cs" />
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
