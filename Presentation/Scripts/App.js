@@ -64,20 +64,18 @@ function fillFormData(tabNumber) {
             productSiema.resizeHandler();
         }, 1);
     }
-    //else if (2 === tabNumber) {
-    //    fillForm(['product']);
-    //} else {
-    //    fillForm(['DNI', 'lastname', 'name', 'email', 'address', 'city', 'postalCode']);
-    //}
 }
 
-//function fillForm(inputs, parent = null) {
-//    if (!parent) {
-//        inputs.map(input => form[input] = $('[name="' + input + '"]').val().trim(), this);
-//    } else {
-//        inputs.map(input => form[parent][input] = $('[name="' + input + '"]').val().trim(), this);
-//    }
-//}
+document.querySelector('body').addEventListener('keypress', function (e) {
+    var key = e.which || e.keyCode;
+    if (key === 13) {
+        if ($('#wizardProfile .btn-finish').is(':visible')) {
+            $('#wizardProfile .btn-finish').click();
+        } else {
+            $('#wizardProfile .btn-next').click();
+        }
+    }
+});
 
 /*****************************************************************************/
 /***************************** P R O D U C T O S *****************************/
