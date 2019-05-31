@@ -40,7 +40,7 @@ namespace Presentation.Controllers
                 String voucher = Convert.ToString(HttpContext.Current.Request.Form["voucher"]);
                 int product = Convert.ToInt32(HttpContext.Current.Request.Form["product"]);
                 new VoucherRepository().SaveRaffle(voucher, product, user.Id);
-                DeliveryEmail.SendEmail();
+                DeliveryEmail.SendEmail(Convert.ToString(HttpContext.Current.Request.Form["user[email]"]));
 
                 return Transform.ToJson(new Response(true));
             }
