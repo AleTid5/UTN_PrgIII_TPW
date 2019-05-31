@@ -187,10 +187,8 @@ $(document).ready(function () {
             $validator.focusInvalid();
             return false;
         }
-
         
         saveRaffle();
-        
     });
 
 });

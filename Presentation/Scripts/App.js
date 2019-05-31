@@ -145,40 +145,48 @@ function saveRaffle() {
     form.user.city = $('[name="city"]').val().trim();
     form.user.postalCode = parseInt($('[name="postalCode"]').val().trim());
 
-    const response = postURL('/api/raffle', form);
+    BootstrapDialog.show({
+        title: 'Registrando su participación...',
+        message: '<div class="text-center"><i class="material-icons">timelapse</i></div>',
+        closable: false,
+        type: BootstrapDialog.TYPE_INFO,
+        onshown: function (dialogRef) {
+            const response = postURL('/api/raffle', form);
 
-    if (response.Status) {
-        BootstrapDialog.show({
-            title: 'Participación exitosa!',
-            message: 'Su participacion se ha procesado exitosamente! Le deseamos mucha suerte! 😊',
-            closable: false,
-            type: BootstrapDialog.TYPE_SUCCESS,
-            buttons: [{
-                label: 'Aceptar',
-                hotkey: 13,
-                cssClass: 'btn-success btn-sm',
-                action: function () {
-                    location.reload();
-                }
-            }]
-        });
-    } else {
-        BootstrapDialog.show({
-            title: 'Ha ocurrido un error!',
-            message: 'Lo sentimos, un error ha ocurrido al intentar registrar su participación! ' +
-                     'Por favor, verifique los datos ingresados, y vuelva a intentarlo!',
-            closable: false,
-            type: BootstrapDialog.TYPE_DANGER,
-            buttons: [{
-                label: 'Cerrar',
-                hotkey: 13,
-                cssClass: 'btn-danger btn-sm',
-                action: function () {
-                    BootstrapDialog.closeAll();
-                }
-            }]
-        });
-    }
+            if (response.Status) {
+                BootstrapDialog.show({
+                    title: 'Participación exitosa!',
+                    message: 'Su participacion se ha procesado exitosamente! Le deseamos mucha suerte! 😊',
+                    closable: false,
+                    type: BootstrapDialog.TYPE_SUCCESS,
+                    buttons: [{
+                        label: 'Aceptar',
+                        hotkey: 13,
+                        cssClass: 'btn-success btn-sm',
+                        action: function () {
+                            location.reload();
+                        }
+                    }]
+                });
+            } else {
+                BootstrapDialog.show({
+                    title: 'Ha ocurrido un error!',
+                    message: 'Lo sentimos, un error ha ocurrido al intentar registrar su participación! ' +
+                        'Por favor, verifique los datos ingresados, y vuelva a intentarlo!',
+                    closable: false,
+                    type: BootstrapDialog.TYPE_DANGER,
+                    buttons: [{
+                        label: 'Cerrar',
+                        hotkey: 13,
+                        cssClass: 'btn-danger btn-sm',
+                        action: function () {
+                            BootstrapDialog.closeAll();
+                        }
+                    }]
+                });
+            }
+        },
+    });
 }
 
 function validateDNI(DNI) {
