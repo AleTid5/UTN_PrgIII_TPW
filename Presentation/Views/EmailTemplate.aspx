@@ -236,9 +236,9 @@
                                                 <td align="center" valign="top" class="imgHero">
                                                     <table width="100%" border="0" cellspacing="0" cellpadding="50" background="https://trello-attachments.s3.amazonaws.com/5cd609561f442c6352556c1f/5ced28ddd35a5a3a20c16af9/0c3ba99e9c0718db05aa8d216ee54b44/user-welcome_(1).png" style="background-position: center;background-size: contain;background-repeat: no-repeat;">
                                                         <tr>
-                                                        	<td>
-                                                        		<p class="productSelected" style="background-image: url('<%= voucher.Product.URLImage %>'); background-size: contain; background-position: center center; background-repeat: no-repeat;"></p>
-															</td>
+                                                        	<td align="center">
+                                                        		<p class="productSelected" style="background-image: url('<%= voucher.Product.URLImage %>'); background-size: contain; background-position: center center; background-repeat: no-repeat;margin-top: 50px;"></p>
+								</td>
                                                         </tr>
                                                     </table>
                                                 </td>                                                
