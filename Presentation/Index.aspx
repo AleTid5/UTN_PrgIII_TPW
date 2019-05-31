@@ -8,9 +8,8 @@
                     <div class="card wizard-card" data-color="green" id="wizardProfile">
                         <form action="" method="">
                             <div class="wizard-header">
-                                <h3 class="wizard-title">PROMO GANÁ
-                                </h3>
-                                <h5>Mega super promo re cheta de los voucher piola amiwo.</h5>
+                                <h3 class="wizard-title">Ingresá | Elegí | Ganá</h3>
+                                <h5>Promo Vouchers - ¡Que tengas suerte!</h5>
                             </div>
                             <div class="wizard-navigation">
                                 <ul>
@@ -28,7 +27,7 @@
                             <div class="wizard-footer">
                                 <div class="pull-right">
                                     <input type='button' class='btn btn-next btn-fill btn-success btn-wd' name='next' value='Siguiente' />
-                                    <input type='button' class='btn btn-finish btn-fill btn-success btn-wd' name='finish' value='Finalizar' />
+                                    <input type='button' class='btn btn-finish btn-fill btn-success btn-wd' name='finish' value='Participar!' />
                                 </div>
 
                                 <div class="pull-left">

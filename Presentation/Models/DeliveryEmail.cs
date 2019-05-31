@@ -9,6 +9,7 @@ using System.Net.Configuration;
 using System.Configuration;
 using System.Net;
 using System.Net.Mime;
+using System.IO;
 
 namespace Presentation.Models
 {
@@ -34,8 +35,23 @@ namespace Presentation.Models
                 Subject = "Participación Promo 2019",
                 IsBodyHtml = true
             };
+            
+            WebRequest webRequest = WebRequest.Create(@"http://" +
+                                                        HttpContext.Current.Request.Url.Host +
+                                                        ":" +
+                                                        HttpContext.Current.Request.Url.Port +
+                                                        "/Views/EmailTemplate");
+            string strContent = "";
 
-            msg.Body += "Usted está participando en la promoción! Le deseamos mucha suerte!";
+            using (var response = webRequest.GetResponse())
+            using (var content = response.GetResponseStream())
+            using (var reader = new StreamReader(content))
+            {
+                strContent = reader.ReadToEnd();
+            }
+
+            //msg.Body += "Usted está participando en la promoción! Le deseamos mucha suerte!";
+            msg.Body += strContent;
 
             smtpClient.Send(msg);
         }

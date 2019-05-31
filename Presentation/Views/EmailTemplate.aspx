@@ -206,7 +206,7 @@
                                                 <td align="center" valign="middle" style="padding-top: 40px; padding-bottom: 40px" class="emailLogo">
                                                     <!-- Logo and Link // -->
                                                     <a href="#" target="_blank" style="text-decoration: none;">
-                                                        <img src="../Content/Images/Email/logo.png" alt="" width="150" border="0" style="width: 100%; max-width: 150px; height: auto; display: block;">
+                                                        <img src="http://weekly.grapestheme.com/notify/img/hero-img/blue/logo.png" alt="" width="150" border="0" style="width: 100%; max-width: 150px; height: auto; display: block;">
                                                     </a>
                                                 </td>
                                             </tr>
@@ -235,7 +235,7 @@
                                             <tr>
                                                 <td align="center" valign="top" style="padding-bottom: 20px" class="imgHero">
                                                     <div>
-                                                        <img src="../Content/Images/Email/ProductLayout.png" width="600" alt="" border="0" style="width: 100%; max-width: 600px; height: auto; display: block;">
+                                                        <img src="https://trello-attachments.s3.amazonaws.com/5cd609561f442c6352556c1f/5ced28ddd35a5a3a20c16af9/0c3ba99e9c0718db05aa8d216ee54b44/user-welcome_(1).png" width="600" alt="" border="0" style="width: 100%; max-width: 600px; height: auto; display: block;">
                                                         <div class="productSelected" style="background-image: url('<%= voucher.Product.URLImage %>'); background-size: contain; background-position: center; background-repeat: no-repeat;">
                                                         </div>
                                                     </div>
@@ -267,19 +267,19 @@
                                                                 <td align="center" valign="top" style="padding-bottom: 20px;" class="catagoryLinks">
 
                                                                     <a href="#" target="_blank" style="display: inline-block;">
-                                                                        <img src="../Content/Images/Email/catagory-1.png" alt="" width="60" border="0" style="height: auto; width: 100%; max-width: 60px; margin-left: 2px; margin-right: 2px">
+                                                                        <img src="http://weekly.grapestheme.com/notify/img/icons/catagory-1.png" alt="" width="60" border="0" style="height: auto; width: 100%; max-width: 60px; margin-left: 2px; margin-right: 2px">
                                                                     </a>
 
                                                                     <a href="#" target="_blank" style="display: inline-block;">
-                                                                        <img src="../Content/Images/Email/catagory-2.png" alt="" width="60" border="0" style="height: auto; width: 100%; max-width: 60px; margin-left: 2px; margin-right: 2px">
+                                                                        <img src="http://weekly.grapestheme.com/notify/img/icons/catagory-2.png" alt="" width="60" border="0" style="height: auto; width: 100%; max-width: 60px; margin-left: 2px; margin-right: 2px">
                                                                     </a>
 
                                                                     <a href="#" target="_blank" style="display: inline-block;">
-                                                                        <img src="../Content/Images/Email/catagory-3.png" alt="" width="60" border="0" style="height: auto; width: 100%; max-width: 60px; margin-left: 2px; margin-right: 2px">
+                                                                        <img src="http://weekly.grapestheme.com/notify/img/icons/catagory-3.png" alt="" width="60" border="0" style="height: auto; width: 100%; max-width: 60px; margin-left: 2px; margin-right: 2px">
                                                                     </a>
 
                                                                     <a href="#" target="_blank" style="display: inline-block;">
-                                                                        <img src="../Content/Images/Email/catagory-4.png" alt="" width="60" border="0" style="height: auto; width: 100%; max-width: 60px; margin-left: 2px; margin-right: 2px">
+                                                                        <img src="http://weekly.grapestheme.com/notify/img/icons/catagory-4.png" alt="" width="60" border="0" style="height: auto; width: 100%; max-width: 60px; margin-left: 2px; margin-right: 2px">
                                                                     </a>
                                                                 </td>
                                                             </tr>
@@ -292,23 +292,23 @@
                                                                 <td align="center" valign="top" style="padding-bottom: 20px;" class="catagoryLinks">
                                                                     <!-- Rating Link // -->
                                                                     <a href="#" target="_blank" style="display: inline-block;" class="links-1">
-                                                                        <img src="../Content/Images/Email/feedback-poor.png" alt="" width="40" border="0" style="height: auto; margin: 2px">
+                                                                        <img src="http://weekly.grapestheme.com/notify/img/icons/feedback-poor.png" alt="" width="40" border="0" style="height: auto; margin: 2px">
                                                                     </a>
                                                                     <!-- Rating Link // -->
                                                                     <a href="#" target="_blank" style="display: inline-block;" class="links-2">
-                                                                        <img src="../Content/Images/Email/feedback-average.png" alt="" width="40" border="0" style="height: auto; margin: 2px">
+                                                                        <img src="http://weekly.grapestheme.com/notify/img/icons/feedback-average.png" alt="" width="40" border="0" style="height: auto; margin: 2px">
                                                                     </a>
                                                                     <!-- Rating Link // -->
                                                                     <a href="#" target="_blank" style="display: inline-block;" class="link-3">
-                                                                        <img src="../Content/Images/Email/feedback-good.png" alt="" width="40" border="0" style="height: auto; margin: 2px">
+                                                                        <img src="http://weekly.grapestheme.com/notify/img/icons/feedback-good.png" alt="" width="40" border="0" style="height: auto; margin: 2px">
                                                                     </a>
                                                                     <!-- Rating Link // -->
                                                                     <a href="#" target="_blank" style="display: inline-block;" class="link-4">
-                                                                        <img src="../Content/Images/Email/feedback-great.png" alt="" width="40" border="0" style="height: auto; margin: 2px">
+                                                                        <img src="http://weekly.grapestheme.com/notify/img/icons/feedback-great.png" alt="" width="40" border="0" style="height: auto; margin: 2px">
                                                                     </a>
                                                                     <!-- Rating Link // -->
                                                                     <a href="#" target="_blank" style="display: inline-block;" class="link-5">
-                                                                        <img src="../Content/Images/Email/feedback-excellent.png" alt="" width="40" border="0" style="height: auto; margin: 2px">
+                                                                        <img src="http://weekly.grapestheme.com/notify/img/icons/feedback-excellent.png" alt="" width="40" border="0" style="height: auto; margin: 2px">
                                                                     </a>
                                                                 </td>
                                                             </tr>
@@ -348,7 +348,7 @@
                                                                             <tr>
                                                                                 <td align="center" class="ctaButton" style="background-color: #003CE5; padding-top: 12px; padding-bottom: 12px; padding-left: 35px; padding-right: 35px; border-radius: 50px">
                                                                                     <!-- Button Link // -->
-                                                                                    <a class="text" href="/" target="_blank" style="color: #FFFFFF; font-family: &#39; poppins&#39; , helvetica, arial, sans-serif; font-size: 13px; font-weight: 600; font-style: normal; letter-spacing: 1px; line-height: 20px; text-transform: uppercase; text-decoration: none; display: block">¡Participar de nuevo!
+                                                                                    <a class="text" href="http://localhost:<%= HttpContext.Current.Request.Url.Port %>/" target="_blank" style="color: #FFFFFF; font-family: &#39; poppins&#39; , helvetica, arial, sans-serif; font-size: 13px; font-weight: 600; font-style: normal; letter-spacing: 1px; line-height: 20px; text-transform: uppercase; text-decoration: none; display: block">¡Participar de nuevo!
                                                                                     </a>
                                                                                 </td>
                                                                             </tr>
@@ -399,23 +399,23 @@
                                                 <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px;" class="socialLinks">
                                                     <!-- Social Links (Facebook)// -->
                                                     <a href="#facebook-link" target="_blank" style="display: inline-block;" class="facebook">
-                                                        <img src="../Content/Images/Email/facebook.png" alt="" width="40" border="0" style="height: auto; width: 100%; max-width: 40px; margin-left: 2px; margin-right: 2px">
+                                                        <img src="http://weekly.grapestheme.com/notify/img/social/light/facebook.png" alt="" width="40" border="0" style="height: auto; width: 100%; max-width: 40px; margin-left: 2px; margin-right: 2px">
                                                     </a>
                                                     <!-- Social Links (Twitter)// -->
                                                     <a href="#twitter-link" target="_blank" style="display: inline-block;" class="twitter">
-                                                        <img src="../Content/Images/Email/twitter.png" alt="" width="40" border="0" style="height: auto; width: 100%; max-width: 40px; margin-left: 2px; margin-right: 2px">
+                                                        <img src="http://weekly.grapestheme.com/notify/img/social/light/twitter.png" alt="" width="40" border="0" style="height: auto; width: 100%; max-width: 40px; margin-left: 2px; margin-right: 2px">
                                                     </a>
                                                     <!-- Social Links (Pintrest)// -->
                                                     <a href="#pintrest-link" target="_blank" style="display: inline-block;" class="pintrest">
-                                                        <img src="../Content/Images/Email/pintrest.png" alt="" width="40" border="0" style="height: auto; width: 100%; max-width: 40px; margin-left: 2px; margin-right: 2px">
+                                                        <img src="http://weekly.grapestheme.com/notify/img/social/light/pintrest.png" alt="" width="40" border="0" style="height: auto; width: 100%; max-width: 40px; margin-left: 2px; margin-right: 2px">
                                                     </a>
                                                     <!-- Social Links (Instagram)// -->
                                                     <a href="#instagram-link" target="_blank" style="display: inline-block;" class="instagram">
-                                                        <img src="../Content/Images/Email/instagram.png" alt="" width="40" border="0" style="height: auto; width: 100%; max-width: 40px; margin-left: 2px; margin-right: 2px">
+                                                        <img src="http://weekly.grapestheme.com/notify/img/social/light/instagram.png" alt="" width="40" border="0" style="height: auto; width: 100%; max-width: 40px; margin-left: 2px; margin-right: 2px">
                                                     </a>
                                                     <!-- Social Links (Linkdin)// -->
                                                     <a href="#linkdin-link" target="_blank" style="display: inline-block;" class="linkdin">
-                                                        <img src="../Content/Images/Email/linkdin.png" alt="" width="40" border="0" style="height: auto; width: 100%; max-width: 40px; margin-left: 2px; margin-right: 2px">
+                                                        <img src="http://weekly.grapestheme.com/notify/img/social/light/linkdin.png" alt="" width="40" border="0" style="height: auto; width: 100%; max-width: 40px; margin-left: 2px; margin-right: 2px">
                                                     </a>
                                                 </td>
                                             </tr>
@@ -452,11 +452,11 @@
                                                 <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 10px; padding-left: 10px; padding-right: 10px;" class="appLinks">
                                                     <!-- App Links (Anroid)// -->
                                                     <a href="#Play-Store-Link" target="_blank" style="display: inline-block;" class="play-store">
-                                                        <img src="../Content/Images/Email/play-store.png" alt="" width="120" border="0" style="height: auto; margin: 5px; width: 100%; max-width: 120px;">
+                                                        <img src="http://weekly.grapestheme.com/notify/img/app/play-store.png" alt="" width="120" border="0" style="height: auto; margin: 5px; width: 100%; max-width: 120px;">
                                                     </a>
                                                     <!-- App Links (IOs)// -->
                                                     <a href="#App-Store-Link" target="_blank" style="display: inline-block;" class="app-store">
-                                                        <img src="../Content/Images/Email/app-store.png" alt="" width="120" border="0" style="height: auto; margin: 5px; width: 100%; max-width: 120px;">
+                                                        <img src="http://weekly.grapestheme.com/notify/img/app/app-store.png" alt="" width="120" border="0" style="height: auto; margin: 5px; width: 100%; max-width: 120px;">
                                                     </a>
                                                 </td>
                                             </tr>
