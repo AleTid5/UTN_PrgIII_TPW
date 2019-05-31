@@ -188,7 +188,9 @@ $(document).ready(function () {
             return false;
         }
 
+        
         saveRaffle();
+        
     });
 
 });
