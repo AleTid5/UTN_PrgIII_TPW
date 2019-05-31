@@ -233,13 +233,15 @@
                                             </tr>
 
                                             <tr>
-                                                <td align="center" valign="top" style="padding-bottom: 20px" class="imgHero">
-                                                    <div>
-                                                        <img src="https://trello-attachments.s3.amazonaws.com/5cd609561f442c6352556c1f/5ced28ddd35a5a3a20c16af9/0c3ba99e9c0718db05aa8d216ee54b44/user-welcome_(1).png" width="600" alt="" border="0" style="width: 100%; max-width: 600px; height: auto; display: block;">
-                                                        <div class="productSelected" style="background-image: url('<%= voucher.Product.URLImage %>'); background-size: contain; background-position: center; background-repeat: no-repeat;">
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                                <td align="center" valign="top" class="imgHero">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="50" background="https://trello-attachments.s3.amazonaws.com/5cd609561f442c6352556c1f/5ced28ddd35a5a3a20c16af9/0c3ba99e9c0718db05aa8d216ee54b44/user-welcome_(1).png" style="background-position: center;background-size: contain;background-repeat: no-repeat;">
+                                                        <tr>
+                                                        	<td>
+                                                        		<p class="productSelected" style="background-image: url('<%= voucher.Product.URLImage %>'); background-size: contain; background-position: center center; background-repeat: no-repeat;"></p>
+															</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>                                                
                                             </tr>
 
                                             <tr>
