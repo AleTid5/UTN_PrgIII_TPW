@@ -142,6 +142,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\Email\app-store.png" />
+    <Content Include="Content\Images\Email\catagory-1.png" />
+    <Content Include="Content\Images\Email\catagory-2.png" />
+    <Content Include="Content\Images\Email\catagory-3.png" />
+    <Content Include="Content\Images\Email\catagory-4.png" />
+    <Content Include="Content\Images\Email\facebook.png" />
+    <Content Include="Content\Images\Email\feedback-average.png" />
+    <Content Include="Content\Images\Email\feedback-excellent.png" />
+    <Content Include="Content\Images\Email\feedback-good.png" />
+    <Content Include="Content\Images\Email\feedback-great.png" />
+    <Content Include="Content\Images\Email\feedback-poor.png" />
+    <Content Include="Content\Images\Email\instagram.png" />
+    <Content Include="Content\Images\Email\linkdin.png" />
+    <Content Include="Content\Images\Email\logo.png" />
+    <Content Include="Content\Images\Email\pintrest.png" />
+    <Content Include="Content\Images\Email\play-store.png" />
+    <Content Include="Content\Images\Email\product-1.png" />
+    <Content Include="Content\Images\Email\twitter.png" />
+    <Content Include="Content\Images\Email\user-welcome.png" />
+    <Content Include="Content\Images\Email\welcome-1.png" />
     <Content Include="Content\Images\profile.gif" />
     <Content Include="Content\Images\apple-icon.png" />
     <Content Include="Content\Images\default-avatar.png" />
@@ -175,6 +195,7 @@
     <Content Include="Scripts\siema.min.js" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
+    <Content Include="Views\EmailTemplate.aspx" />
     <Content Include="Views\Products.html" />
     <Content Include="Views\ProductTemplate.aspx" />
     <Content Include="Views\User.html" />
@@ -226,6 +247,13 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
+    <Compile Include="Views\EmailTemplate.aspx.cs">
+      <DependentUpon>EmailTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\EmailTemplate.aspx.designer.cs">
+      <DependentUpon>EmailTemplate.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\ProductTemplate.aspx.cs">
       <DependentUpon>ProductTemplate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -243,6 +271,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -291,25 +320,11 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
   </Target>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-<Target Name="CopyRoslynFiles" AfterTargets="AfterBuild" Condition="!$(Disable_CopyWebApplication) And '$(OutDir)' != '$(OutputPath)'">
+  <Target Name="CopyRoslynFiles" AfterTargets="AfterBuild" Condition="!$(Disable_CopyWebApplication) And '$(OutDir)' != '$(OutputPath)'">
     <ItemGroup>
       <RoslynFiles Include="$(CscToolPath)\*" />
     </ItemGroup>
     <MakeDir Directories="$(WebProjectOutputDir)\bin\roslyn" />
     <Copy SourceFiles="@(RoslynFiles)" DestinationFolder="$(WebProjectOutputDir)\bin\roslyn" SkipUnchangedFiles="true" Retries="$(CopyRetryCount)" RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)" />
-</Target>
-<Target Name="CopyRoslynFiles" AfterTargets="AfterBuild" Condition="!$(Disable_CopyWebApplication) And '$(OutDir)' != '$(OutputPath)'">
-    <ItemGroup>
-      <RoslynFiles Include="$(CscToolPath)\*" />
-    </ItemGroup>
-    <MakeDir Directories="$(WebProjectOutputDir)\bin\roslyn" />
-    <Copy SourceFiles="@(RoslynFiles)" DestinationFolder="$(WebProjectOutputDir)\bin\roslyn" SkipUnchangedFiles="true" Retries="$(CopyRetryCount)" RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)" />
-</Target>
-  -->
+  </Target>
 </Project>
