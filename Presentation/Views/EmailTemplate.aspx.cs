@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,9 +10,14 @@ namespace Presentation.Views
 {
     public partial class EmailTemplate : System.Web.UI.Page
     {
+        public Voucher voucher = new Voucher();
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            voucher.User = new User();
+            voucher.Product = new Product();
+            voucher.User.Name = "Alejandro";
+            voucher.Product.URLImage = "https://images-na.ssl-images-amazon.com/images/I/61cZ%2BAiiz0L._SX679_.jpg";
         }
     }
 }
