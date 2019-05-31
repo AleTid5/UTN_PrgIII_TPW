@@ -16,7 +16,7 @@ namespace Presentation.Models
 
     public static class DeliveryEmail
     {
-        public static void SendEmail(string email)
+        public static void SendEmail(string email, string username, string productImage)
         {
             SmtpSection smtpSection = (SmtpSection)ConfigurationManager.GetSection("system.net/mailSettings/smtp");
             SmtpClient smtpClient = new SmtpClient(smtpSection.Network.Host, smtpSection.Network.Port)
@@ -40,7 +40,9 @@ namespace Presentation.Models
                                                         HttpContext.Current.Request.Url.Host +
                                                         ":" +
                                                         HttpContext.Current.Request.Url.Port +
-                                                        "/Views/EmailTemplate");
+                                                        "/Views/EmailTemplate?" +
+                                                        "Username=" + username +
+                                                        "&ProductURL=" + productImage);
             string strContent = "";
 
             using (var response = webRequest.GetResponse())
@@ -50,7 +52,6 @@ namespace Presentation.Models
                 strContent = reader.ReadToEnd();
             }
 
-            //msg.Body += "Usted está participando en la promoción! Le deseamos mucha suerte!";
             msg.Body += strContent;
 
             smtpClient.Send(msg);

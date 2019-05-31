@@ -41,6 +41,26 @@ namespace Business
             }
         }
 
+        public Product GetProductById(int ProductId)
+        {
+            try
+            {
+                String Query = String.Format("SELECT * FROM {0} WHERE Id = {1}", this.Table, ProductId);
+                this.ExecSelect(Query);
+                this.SqlDataReader.Read();
+
+                return this.GetRowCasted();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                this.SqlConnection.Close();
+            }
+        }
+
         private Product GetRowCasted()
         {
             return new Product

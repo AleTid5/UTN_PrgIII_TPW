@@ -16,8 +16,8 @@ namespace Presentation.Views
         {
             voucher.User = new User();
             voucher.Product = new Product();
-            voucher.User.Name = "Alejandro";
-            voucher.Product.URLImage = "https://images-na.ssl-images-amazon.com/images/I/61cZ%2BAiiz0L._SX679_.jpg";
+            voucher.User.Name = Request["Username"];
+            voucher.Product.URLImage = Request["ProductURL"];
         }
     }
 }
