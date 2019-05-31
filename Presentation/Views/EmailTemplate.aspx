@@ -247,7 +247,7 @@
                                             <tr>
                                                 <td align="center" valign="top" style="padding-bottom: 5px; padding-left: 20px; padding-right: 20px;" class="mainTitle">
                                                     <!-- Main Title Text // -->
-                                                    <h2 class="text" style="color: #000000; font-family: &#39; poppins&#39; , helvetica, arial, sans-serif; font-size: 28px; font-weight: 500; font-style: normal; letter-spacing: normal; line-height: 36px; text-transform: none; text-align: center; padding: 0; margin: 0; margin-top: 50px;">¡Felicitaciones!
+                                                    <h2 class="text" style="color: #000000; font-family: &#39; poppins&#39; , helvetica, arial, sans-serif; font-size: 28px; font-weight: 500; font-style: normal; letter-spacing: normal; line-height: 36px; text-transform: none; text-align: center; padding: 0; margin: 0; margin-top: 20px;">¡Felicitaciones!
                                                     </h2>
                                                 </td>
                                             </tr>
