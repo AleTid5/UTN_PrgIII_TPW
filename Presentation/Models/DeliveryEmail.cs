@@ -35,10 +35,7 @@ namespace Presentation.Models
                 IsBodyHtml = true
             };
 
-            msg.IsBodyHtml = true;
-            msg.Body += "Ale Ale Ale Ale Ale Ale Ale ";
-            msg.Body += "Martin Martin Martin Martin ";
-            msg.Body += "Texto 3 del cuerpo del correo";
+            msg.Body += "Usted está participando en la promoción! Le deseamos mucha suerte!";
 
             smtpClient.Send(msg);
         }

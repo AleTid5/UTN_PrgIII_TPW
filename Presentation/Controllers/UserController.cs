@@ -25,11 +25,5 @@ namespace Presentation.Controllers
                 return Transform.ToJson(new Response(false, null));
             }
         }
-
-        [HttpGet]
-        public void test()
-        {
-            DeliveryEmail.SendEmail("aleetidele@hotmail.com");
-        }
     }
 }
